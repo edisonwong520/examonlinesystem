@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.StudentresultMapperCustom" >
+  <select id="getListByLimit" parameterType="vo.QueryResultVo" resultType="po.StudentresultCustom" >
+    SELECT 
+	  studentresult.*,
+	  lesson.`name` lessonname 
+	FROM
+	  studentresult,
+	  lesson 
+    <where>
+		studentresult.`lessonid` = lesson.`id` 
+      <if test="queryResult.option.equals('examnumber')" >
+        and studentresult.`examnumber` like '%${queryResult.value}%'
+      </if>
+      <if test="queryResult.option.equals('lessonname')" >
+        and lesson.`name` like '%${queryResult.value}%'
+      </if>
+      <if test="queryResult.option.equals('createtime')" >
+        and studentresult.`createtime` like '${queryResult.value}%'
+      </if>
+    </where>
+    limit #{pagination.startPage},#{pagination.rows}
+  </select>
+  
+  <select id="getListByStudentId" parameterType="int" resultType="StudentresultCustom">
+  	SELECT 
+	  studentresult.*,
+	  lesson.`name` lessonname 
+	FROM
+	  studentresult,
+	  lesson 
+	WHERE studentresult.`lessonid` = lesson.`id` 
+	  AND studentresult.`examnumber` LIKE '%${value}'
+	ORDER BY studentresult.`createtime` DESC
+  </select>
+</mapper>

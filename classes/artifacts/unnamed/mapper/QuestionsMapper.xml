@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.QuestionsMapper" >
+  <resultMap id="BaseResultMap" type="po.Questions" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="subject" property="subject" jdbcType="VARCHAR" />
+    <result column="type" property="type" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="taotiid" property="taotiid" jdbcType="INTEGER" />
+    <result column="optiona" property="optiona" jdbcType="VARCHAR" />
+    <result column="optionb" property="optionb" jdbcType="VARCHAR" />
+    <result column="optionc" property="optionc" jdbcType="VARCHAR" />
+    <result column="optiond" property="optiond" jdbcType="VARCHAR" />
+    <result column="answer" property="answer" jdbcType="VARCHAR" />
+    <result column="note" property="note" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, subject, type, createtime, taotiid, optiona, optionb, optionc, optiond, answer, 
+    note
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="po.QuestionsExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from questions
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from questions
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from questions
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="po.QuestionsExample" >
+    delete from questions
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="po.Questions" >
+    insert into questions (id, subject, type, 
+      createtime, taotiid, optiona, 
+      optionb, optionc, optiond, 
+      answer, note)
+    values (#{id,jdbcType=INTEGER}, #{subject,jdbcType=VARCHAR}, #{type,jdbcType=VARCHAR}, 
+      #{createtime,jdbcType=TIMESTAMP}, #{taotiid,jdbcType=INTEGER}, #{optiona,jdbcType=VARCHAR}, 
+      #{optionb,jdbcType=VARCHAR}, #{optionc,jdbcType=VARCHAR}, #{optiond,jdbcType=VARCHAR}, 
+      #{answer,jdbcType=VARCHAR}, #{note,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="po.Questions" >
+    insert into questions
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="subject != null" >
+        subject,
+      </if>
+      <if test="type != null" >
+        type,
+      </if>
+      <if test="createtime != null" >
+        createtime,
+      </if>
+      <if test="taotiid != null" >
+        taotiid,
+      </if>
+      <if test="optiona != null" >
+        optiona,
+      </if>
+      <if test="optionb != null" >
+        optionb,
+      </if>
+      <if test="optionc != null" >
+        optionc,
+      </if>
+      <if test="optiond != null" >
+        optiond,
+      </if>
+      <if test="answer != null" >
+        answer,
+      </if>
+      <if test="note != null" >
+        note,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="subject != null" >
+        #{subject,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="taotiid != null" >
+        #{taotiid,jdbcType=INTEGER},
+      </if>
+      <if test="optiona != null" >
+        #{optiona,jdbcType=VARCHAR},
+      </if>
+      <if test="optionb != null" >
+        #{optionb,jdbcType=VARCHAR},
+      </if>
+      <if test="optionc != null" >
+        #{optionc,jdbcType=VARCHAR},
+      </if>
+      <if test="optiond != null" >
+        #{optiond,jdbcType=VARCHAR},
+      </if>
+      <if test="answer != null" >
+        #{answer,jdbcType=VARCHAR},
+      </if>
+      <if test="note != null" >
+        #{note,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="po.QuestionsExample" resultType="java.lang.Integer" >
+    select count(*) from questions
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update questions
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.subject != null" >
+        subject = #{record.subject,jdbcType=VARCHAR},
+      </if>
+      <if test="record.type != null" >
+        type = #{record.type,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createtime != null" >
+        createtime = #{record.createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.taotiid != null" >
+        taotiid = #{record.taotiid,jdbcType=INTEGER},
+      </if>
+      <if test="record.optiona != null" >
+        optiona = #{record.optiona,jdbcType=VARCHAR},
+      </if>
+      <if test="record.optionb != null" >
+        optionb = #{record.optionb,jdbcType=VARCHAR},
+      </if>
+      <if test="record.optionc != null" >
+        optionc = #{record.optionc,jdbcType=VARCHAR},
+      </if>
+      <if test="record.optiond != null" >
+        optiond = #{record.optiond,jdbcType=VARCHAR},
+      </if>
+      <if test="record.answer != null" >
+        answer = #{record.answer,jdbcType=VARCHAR},
+      </if>
+      <if test="record.note != null" >
+        note = #{record.note,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update questions
+    set id = #{record.id,jdbcType=INTEGER},
+      subject = #{record.subject,jdbcType=VARCHAR},
+      type = #{record.type,jdbcType=VARCHAR},
+      createtime = #{record.createtime,jdbcType=TIMESTAMP},
+      taotiid = #{record.taotiid,jdbcType=INTEGER},
+      optiona = #{record.optiona,jdbcType=VARCHAR},
+      optionb = #{record.optionb,jdbcType=VARCHAR},
+      optionc = #{record.optionc,jdbcType=VARCHAR},
+      optiond = #{record.optiond,jdbcType=VARCHAR},
+      answer = #{record.answer,jdbcType=VARCHAR},
+      note = #{record.note,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="po.Questions" >
+    update questions
+    <set >
+      <if test="subject != null" >
+        subject = #{subject,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null" >
+        type = #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        createtime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="taotiid != null" >
+        taotiid = #{taotiid,jdbcType=INTEGER},
+      </if>
+      <if test="optiona != null" >
+        optiona = #{optiona,jdbcType=VARCHAR},
+      </if>
+      <if test="optionb != null" >
+        optionb = #{optionb,jdbcType=VARCHAR},
+      </if>
+      <if test="optionc != null" >
+        optionc = #{optionc,jdbcType=VARCHAR},
+      </if>
+      <if test="optiond != null" >
+        optiond = #{optiond,jdbcType=VARCHAR},
+      </if>
+      <if test="answer != null" >
+        answer = #{answer,jdbcType=VARCHAR},
+      </if>
+      <if test="note != null" >
+        note = #{note,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="po.Questions" >
+    update questions
+    set subject = #{subject,jdbcType=VARCHAR},
+      type = #{type,jdbcType=VARCHAR},
+      createtime = #{createtime,jdbcType=TIMESTAMP},
+      taotiid = #{taotiid,jdbcType=INTEGER},
+      optiona = #{optiona,jdbcType=VARCHAR},
+      optionb = #{optionb,jdbcType=VARCHAR},
+      optionc = #{optionc,jdbcType=VARCHAR},
+      optiond = #{optiond,jdbcType=VARCHAR},
+      answer = #{answer,jdbcType=VARCHAR},
+      note = #{note,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

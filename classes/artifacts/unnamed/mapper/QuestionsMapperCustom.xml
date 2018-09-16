@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mapper.QuestionsMapperCustom" >
+	<select id="getListByLimit" resultType="QuestionsCustom" parameterType="Pagination">
+		SELECT 
+		  questions.*,
+		  lesson.`name` lessonName,
+		  taoti.`name` taotiName 
+		FROM
+		  questions,
+		  lesson,
+		  taoti 
+		WHERE questions.`taotiid` = taoti.`id` 
+		  AND taoti.`lessonid` = lesson.`id` 
+		ORDER BY taotiid
+		LIMIT #{startPage},#{rows}
+	</select>
+	
+	<select id="getListByTaotiId" resultType="QuestionsCustom" parameterType="int">
+		SELECT 
+		  questions.*,
+		  lesson.`name` lessonName,
+		  taoti.`name` taotiName 
+		FROM
+		  questions,
+		  lesson,
+		  taoti 
+		WHERE questions.`taotiid` = taoti.`id` 
+		  AND questions.`taotiid` = #{value}  
+		  AND taoti.`lessonid` = lesson.`id`
+	</select>
+</mapper>
