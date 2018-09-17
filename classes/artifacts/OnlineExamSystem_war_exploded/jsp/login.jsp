@@ -47,7 +47,7 @@
 				</tr>
 				<tr>
 					<td><input type="submit" value="登录" style="background:yellow"></td>
-                    <td><input type="submit" name="Submit" value="找回密码" style="background:yellow" onclick=window.open("http://localhost:8080/jsp/forgetpassword.jsp")></td>
+                    <td><input type="button"  value="找回密码" style="background:yellow" onclick=window.location.href="${pageContext.request.contextPath}/jsp/forgetpassword.jsp"></td>
 					<td align="right"><input type="button" id="btn" value="注册" style="background:yellow"></td>
 
 				</tr>

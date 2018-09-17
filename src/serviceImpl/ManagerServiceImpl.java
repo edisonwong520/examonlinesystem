@@ -25,7 +25,7 @@ public class ManagerServiceImpl implements ManagerService {
 		Criteria criteria = example.createCriteria();
 		criteria.andNameEqualTo(manager.getName());
 		criteria.andPasswordEqualTo(manager.getPassword());
-        System.out.println(manager.getPassword());
+
 		return managerMapper.selectByExample(example);
 	}
 

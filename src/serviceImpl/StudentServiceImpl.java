@@ -27,7 +27,7 @@ public class StudentServiceImpl implements StudentService {
 		Criteria criteria = example.createCriteria();
 		criteria.andNameEqualTo(student.getName());
 //		System.out.println(MD5.stringToMD5(student.getPassword()));
-		System.out.println(student.getPassword());
+
 		criteria.andPasswordEqualTo(student.getPassword());
 		return studentMapper.countByExample(example);
 	}
@@ -51,6 +51,11 @@ public class StudentServiceImpl implements StudentService {
 		List<Student> list = studentMapper.selectByExample(example);
 		return list.get(0);
 	}
+
+//    public Student changepwd(String name,String pwd) throws Exception {
+//        pass;
+//    }
+
 
 	public Student findOneById(Integer id) throws Exception {
 		Student student = studentMapper.selectByPrimaryKey(id);

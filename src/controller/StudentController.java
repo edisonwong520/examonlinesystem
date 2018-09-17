@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -26,6 +27,7 @@ public class StudentController {
 	
 	@RequestMapping("/login.action")
 	public String login(Student student,HttpSession session,HttpServletRequest request) throws Exception{
+
 		Integer count = studentService.checkLogin(student);
 		if(count>0) {
 			session.setAttribute("studentName", student.getName());
@@ -35,11 +37,31 @@ public class StudentController {
 			return "/login";
 		}
 	}
-	
+
+
 	@RequestMapping("/toSignIn.action")
-	public String toSignIn() throws Exception{
-		return "signIn";
+	public String toSignIn(@RequestParam("name") String name,
+                           @RequestParam("password")String password,HttpServletRequest request
+                           ) throws Exception{
+
+        String md5code=MD5.stringToMD5(password);
+        String sql=String.format("update student set password='%s' where name='%s'",md5code,name);
+        Integer count = DBContoller.exec_cmd(sql);
+        if(count>0) {
+            request.setAttribute("message", "资料填写错误！");
+            return "/login";
+        }else {
+            request.setAttribute("message", "重置密码成功！");
+            return "/login";
+//        }
+        }
 	}
+
+
+//    @RequestMapping("/toSignIn.action")
+//    public String toSignIn() throws Exception{
+//        return "signIn";
+//    }
 	
 	@RequestMapping("/checkSignIn.action")
 	public @ResponseBody boolean checkSignIn(Student student,HttpSession session) throws Exception{

@@ -5,45 +5,108 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href="${pageContext.request.contextPath }/image/main_logo.ico" rel="shortcut icon">
-    <title>在线考试系统-首页</title>
-    <link rel="stylesheet" type="text/css"
-          href="${pageContext.request.contextPath }/easyui/themes/default/easyui.css">
-    <link rel="stylesheet" type="text/css"
-          href="${pageContext.request.contextPath }/easyui/themes/icon.css">
+    <title>在线考试系统-</title>
     <script type="text/javascript"
             src="${pageContext.request.contextPath }/easyui/jquery.min.js"></script>
-    <script type="text/javascript"
-            src="${pageContext.request.contextPath }/easyui/jquery.easyui.min.js"></script>
-    <script type="text/javascript"
-            src="${pageContext.request.contextPath }/easyui/locale/easyui-lang-zh_CN.js"></script>
-
+    <script type="text/javascript">
+        $(function(){
+            $("input:first").change(function(){
+                var name=$(this).val();
+                if(name==""){
+                    return;
+                }
+                $.ajax({
+                    url:'${pageContext.request.contextPath}/checkSignIn.action',
+                    data:'name='+name,
+                    type:'post',
+                    success:function(data){
+                        if(data==false){
+                            $("#sp").text("");
+                        }else{
+                            $("#sp").text("并没有该账号！请重新输入");
+                        }
+                    }
+                })
+            })
+            $("#subm").click(function(){
+                var flag=true;
+                $(":text").each(function(){
+                    var thisVal = $(this).val();
+                    var thisText=$(this).parent().prev().text();
+                    if(thisVal==""){
+                        alert(thisText+"不能为空！");
+                        flag=false;
+                        return false;
+                    }
+                })
+                if(flag){
+                    var password1=$("#password1").val();
+                    var password2=$("#password2").val();
+                    var spanText = $("#sp").text();
+                    if(spanText != ""){
+                        alert("帐号已被注册！");
+                        return false;
+                    }
+                    if(password1=="" || password2==""){
+                        alert("请输入密码！");
+                        return false;
+                    }
+                    if(password1 != password2){
+                        alert("两次密码输入不一致！");
+                        return false;
+                    }
+                    return true;
+                }
+            })
+        })
+    </script>
 </head>
-<body style="background-image:url('${pageContext.request.contextPath}/image/indexback.jpg');background-size:cover">
-<div style="margin-top:2%">
-    <font color="#01814A" size="12px" face="仿宋" style="font-weight:bold;margin-left:34%">营 养 在 线 考 试 网</font>
-    <br>
-    <br>
-
+<body>
+<div style="line-height:80px;height:80px;background-image:url('${pageContext.request.contextPath}/image/signinback.jpg');background-size:cover">
+    <font color="white" size="10" face="仿宋" style="font-weight:bold;margin-left:2%">营 养 在 线 考 试 网</font>
 </div>
-<div style="margin-top:5%;margin-left:30%">
-    <table cellpadding="30px">
-
-        <tr>
-            <td>帐&nbsp;号</td>
-            <td><input class="easyui-textbox" data-options="iconCls:'icon-man'" name="name"></td>
-        </tr>
-        <tr>
-            <td>密&nbsp;码</td>
-            <td><input class="easyui-passwordbox" name="password"></td>
-        </tr>       
-        <tr>
-            <td align="center"><input type="button" id="btn" value="找回密码" style="background:yellow"></td>
-        </tr>
-
-    </table>
+<div style="margin-top:2%;margin-left:2%">
+    <font color="black">当前位置 ： 找回密码</font>
 </div>
-<center style="margin-top:5%">
-    <font>CopyRight ©: www.xiaowu.com</font>
+<center style="margin-top:2%">
+    <form action="${pageContext.request.contextPath }/toSignIn.action" method="post">
+        <table cellpadding="6px">
+            <tr>
+                <td>帐号</td>
+                <td><input type="text" name="name"><font id="sp" color="red"></font></td>
+            </tr>
+            <tr>
+                <td>性别</td>
+                <td>
+                    <select name="sex">
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>专业</td>
+                <td><input type="text" name="profesion"></td>
+            </tr>
+            <tr>
+                <td>新密码</td>
+                <td><input id="password1" type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>确认新密码</td>
+                <td><input id="password2" type="password"></td>
+            </tr>
+
+
+            <tr>
+                <td><input id="subm" type="submit" value="确认"></td>
+                <td align="right"><input type="reset" value="重置"></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <a href="${pageContext.request.contextPath }/jsp/login.jsp">返回登 录</a>
+    </form>
 </center>
 </body>
 </html>

@@ -27,7 +27,7 @@
 		$("#name").change(function(){
 			var name=$(this).val();
 			$.ajax({
-				url:'${pageContext.request.contextPath}/checkSignIn.action',
+				url:'${pageContext.request.contextPath}/check',
 				data:'name='+name,
 				type:'post',
 				success:function(data){
