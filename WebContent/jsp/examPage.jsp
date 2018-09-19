@@ -118,7 +118,7 @@
 					</c:if>
 				</c:forEach>
 				<tr>
-					<td align="center"><input id="submi" type="submit" style="background:yellow" value="交卷"></td>
+					<td align="center"><input id="submi" type="submit" style="background:whitesmoke" value="交卷"></td>
 				</tr>
 			</table>
 		<br>

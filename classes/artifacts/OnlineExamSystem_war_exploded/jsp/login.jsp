@@ -46,10 +46,13 @@
 					<td><input class="easyui-passwordbox" name="password"></td>
 				</tr>
 				<tr>
-					<td><input type="submit" value="登录" style="background:yellow"></td>
-                    <td><input type="button"  value="找回密码" style="background:yellow" onclick=window.location.href="${pageContext.request.contextPath}/jsp/forgetpassword.jsp"></td>
-                    <td><input type="button"  value="管理员登陆入口" style="background:yellow" onclick=window.location.href="${pageContext.request.contextPath}/jsp/managerLogin.jsp"></td>
-					<td><input type="button" id="btn" value="注册" style="background:yellow"></td>
+					<td><input type="submit" value="登录" style="background:whitesmoke"></td>
+                    <td><input type="button"  value="找回密码" style="background:whitesmoke" onclick=window.location.href="${pageContext.request.contextPath}/jsp/forgetpassword.jsp"></td>
+
+
+
+                    <td><input type="button"  value="管理员登陆入口" style="background:whitesmoke; margin-left: -90px;" onclick=window.location.href="${pageContext.request.contextPath}/jsp/managerLogin.jsp"></td>
+					<td><input type="button" id="btn" value="注册" style="background:whitesmoke"></td>
 
 				</tr>
 

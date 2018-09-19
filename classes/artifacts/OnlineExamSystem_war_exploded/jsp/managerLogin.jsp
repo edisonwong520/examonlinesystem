@@ -34,8 +34,8 @@
 					<td><input class="easyui-passwordbox" name="password"></td>
 				</tr>
 				<tr>
-					<td colspan="2" ><input type="submit" value="登录" style="background:yellow"></td>
-                    <td><input type="button"  value="退出" style="background:yellow" onclick=window.location.href="${pageContext.request.contextPath}/jsp/login.jsp"></td>
+					<td colspan="2" ><input type="submit" value="登录" style="background:whitesmoke"></td>
+                    <td><input type="button"  value="退出" style="background:whitesmoke; margin-left: -65px;" onclick=window.location.href="${pageContext.request.contextPath}/jsp/login.jsp"></td>
 				</tr>
 				<tr>
 					<td colspan="2" align="center"><font color="red">${message }</font></td>
