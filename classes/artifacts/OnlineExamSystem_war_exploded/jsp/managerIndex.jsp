@@ -44,7 +44,7 @@
 <input id="managerAuthority" type="hidden" value="${sessionScope.managerAuthority }">
 	<div data-options="region:'north'" style="height:60px">
 		<div style="line-height:60px;height:58px;background-image:url('${pageContext.request.contextPath}/image/signinback.jpg');background-size:cover">
-			<font color="white" size="8px" face="仿宋" style="font-weight:bold;margin-left:2%">营 养 在 线 考 试 网<font size="5px" color="black"> -- 后 台 管 理 </font></font>
+			<font color="white" size="8px" face="仿宋" style="font-weight:bold;margin-left:2%">在 线 考 试 系 统<font size="5px" color="black"> -- 后 台 管 理 </font></font>
 			<font id="ft" style="margin-left:20%">当 前 管 理 员：<span id="sp">${sessionScope.managerName }</span></font>
 		</div>
 	</div>

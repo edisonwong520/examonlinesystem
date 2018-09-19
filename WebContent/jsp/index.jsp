@@ -28,7 +28,7 @@
 </head>
 <body style="background-image:url('${pageContext.request.contextPath}/image/indexback12.jpg');background-size:cover">
 <div style="margin-top:2%">
-	<font color="white" size="12px" face="仿宋" style="font-weight:bold;margin-left:34%">营 养 在 线 考 试 网</font>
+	<font color="white" size="12px" face="仿宋" style="font-weight:bold;margin-left:34%">在 线 考 试 系 统</font>
 	<br>
 	<br>
 	<font color="white"  id="ft" style="margin-left: 34.5%">当 前 学 生：<span id="sp">${sessionScope.studentName }</span></font>

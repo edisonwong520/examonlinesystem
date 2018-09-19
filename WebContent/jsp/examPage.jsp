@@ -66,7 +66,7 @@
 </head>
 <body class="easyui-layout">
 <div data-options="region:'north'" style="line-height:60px;height:80px;background-image:url('${pageContext.request.contextPath}/image/signinback.jpg');background-size:cover">
-	<font color="white" size="10" face="仿宋" style="font-weight:bold;margin-left:2%">营 养 在 线 考 试 网</font>
+	<font color="white" size="10" face="仿宋" style="font-weight:bold;margin-left:2%">在 线 考 试 系 统</font>
 	<font id="ft1" size="3px" style="margin-left:5%">当 前 考 生：<span id="sp1">${sessionScope.studentName }</span></font>
 	<font id="ft3" size="3px" style="margin-left:2%">考 试 限 时：<span id="sp3">2分钟</span></font>
 	<font id="ft4" size="3px" style="margin-left:2%">剩 余 时 间：<span id="sp4"></span></font>

@@ -20,7 +20,7 @@
 </head>
 <body>
 <div style="line-height:80px;height:80px;background-image:url('${pageContext.request.contextPath}/image/.jpg');background-size:cover">
-	<font color="white" size="10" face="仿宋" style="font-weight:bold;margin-left:2%">营 养 在 线 考 试 网</font>
+	<font color="white" size="10" face="仿宋" style="font-weight:bold;margin-left:2%">在 线 考 试 系 统</font>
 	<font id="ft" style="margin-left:40%">当 前 考 生：<span id="sp">${sessionScope.studentName }</span></font>
 </div>
 <div style="margin-top:2%;margin-left:2%">
