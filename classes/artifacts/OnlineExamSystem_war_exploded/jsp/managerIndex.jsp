@@ -51,7 +51,7 @@
 	
 	<div data-options="region:'south'" style="height:40px">
 		<center style="margin-top:1%">
-			<font>CopyRight © : www.xiaowu.com</font>
+			<font>CopyRight © : Huang Xin</font>
 		</center>
 	</div>
 	

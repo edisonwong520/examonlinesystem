@@ -26,12 +26,12 @@
 	})
 </script>
 </head>
-<body style="background-image:url('${pageContext.request.contextPath}/image/indexback.jpg');background-size:cover">
+<body style="background-image:url('${pageContext.request.contextPath}/image/indexback12.jpg');background-size:cover">
 <div style="margin-top:2%">
-	<font color="#01814A" size="12px" face="仿宋" style="font-weight:bold;margin-left:34%">营 养 在 线 考 试 网</font>
+	<font color="white" size="12px" face="仿宋" style="font-weight:bold;margin-left:34%">营 养 在 线 考 试 网</font>
 	<br>
 	<br>
-	<font id="ft" style="margin-left:35%">当 前 学 生：<span id="sp">${sessionScope.studentName }</span></font>
+	<font color="white"  id="ft" style="margin-left: 34.5%">当 前 学 生：<span id="sp">${sessionScope.studentName }</span></font>
 </div>
 <div style="margin-top:5%;margin-left:30%">
 	<table cellpadding="30px">
@@ -42,8 +42,8 @@
 			<td>
 				<a href="${pageContext.request.contextPath }/queryResult.action" class="easyui-linkbutton" data-options="iconCls:'icon-search',size:'large'"><font size="4px">成绩查询</font></a>
 			</td>
-		</tr>
-		<tr>
+
+
 			<td>
 				<a href="${pageContext.request.contextPath }/toEdit.action" class="easyui-linkbutton" data-options="iconCls:'icon-reload',size:'large'"><font size="4px">修改资料</font></a>
 			</td>
@@ -54,7 +54,7 @@
 	</table>
 </div>
 <center style="margin-top:5%">
-	<font>CopyRight ©: www.xiaowu.com</font>
+	<font>CopyRight ©:Huang Xin</font>
 </center>
 </body>
 </html>

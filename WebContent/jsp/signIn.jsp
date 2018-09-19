@@ -9,7 +9,18 @@
 <script type="text/javascript"
 	src="${pageContext.request.contextPath }/easyui/jquery.min.js"></script>
 <script type="text/javascript">
-	$(function(){
+
+    function validpwd(s)
+    {
+        var patrn=/^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$/;
+        if (!patrn.exec(s)) {
+            return false;
+        }
+        return true;
+    }
+
+
+    $(function(){
 		$("input:first").change(function(){
 			var name=$(this).val();
 			if(name==""){
@@ -51,7 +62,12 @@
 					alert("请输入密码！");
 					return false;
 				}
-				if(password1 != password2){
+                if (validpwd(password1)==false){
+                    alert("密码不符合格式！");
+                    return false;
+                }
+
+                if(password1 != password2){
 					alert("两次密码输入不一致！");
 					return false;
 				}
@@ -62,7 +78,7 @@
 </script>
 </head>
 <body>
-<div style="line-height:80px;height:80px;background-image:url('${pageContext.request.contextPath}/image/signinback.jpg');background-size:cover">
+<div style="line-height:80px;height:80px;background-image:url('${pageContext.request.contextPath}/image/.jpg');background-size:cover">
 	<font color="white" size="10" face="仿宋" style="font-weight:bold;margin-left:2%">营 养 在 线 考 试 网</font>
 </div>
 <div style="margin-top:2%;margin-left:2%">

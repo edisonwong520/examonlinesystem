@@ -18,23 +18,24 @@
 	src="${pageContext.request.contextPath }/easyui/locale/easyui-lang-zh_CN.js"></script>
 	
 </head>
-<body style="background-image:url('${pageContext.request.contextPath}/image/managerLogin.jpg');background-size:cover">
+<body style="background-image:url('${pageContext.request.contextPath}/image/loginback2.jpg');background-size:cover">
 	<div style="text-align:center;margin-top:10%">
-		<font face="仿宋" size="10">管 理 员 登 录</font>
+		<font face="仿宋" color="white" size="10">管 理 员 登 录</font>
 	</div>
 	<div style="margin-top:3%;margin-left:40%">
 		<form action="${pageContext.request.contextPath }/managerLogin.action" method="post">
 			<table cellpadding="10px">
 				<tr>
-					<td><font>帐&nbsp;号</font></td>
+					<td><font color="white" >帐&nbsp;号</font></td>
 					<td><input class="easyui-textbox" data-options="iconCls:'icon-man'" name="name"></td>
 				</tr>
 				<tr>
-					<td><font>密&nbsp;码</font></td>
+					<td><font color="white" >密&nbsp;码</font></td>
 					<td><input class="easyui-passwordbox" name="password"></td>
 				</tr>
 				<tr>
-					<td colspan="2" align="center"><input type="submit" value="登录" style="background:yellow"></td>
+					<td colspan="2" ><input type="submit" value="登录" style="background:yellow"></td>
+                    <td><input type="button"  value="退出" style="background:yellow" onclick=window.location.href="${pageContext.request.contextPath}/jsp/login.jsp"></td>
 				</tr>
 				<tr>
 					<td colspan="2" align="center"><font color="red">${message }</font></td>

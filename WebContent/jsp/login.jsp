@@ -30,7 +30,7 @@
 	})
 </script>
 </head>
-<body style="background-image:url('${pageContext.request.contextPath}/image/loginback.jpg');background-size:cover">
+<body style="background-image:url('${pageContext.request.contextPath}/image/loginback2.jpg');background-size:cover">
 	<div style="text-align:center;margin-top:12%">
 		<font face="仿宋" size="10" color="white">考 生 登 录</font>
 	</div>
@@ -48,9 +48,11 @@
 				<tr>
 					<td><input type="submit" value="登录" style="background:yellow"></td>
                     <td><input type="button"  value="找回密码" style="background:yellow" onclick=window.location.href="${pageContext.request.contextPath}/jsp/forgetpassword.jsp"></td>
-					<td align="right"><input type="button" id="btn" value="注册" style="background:yellow"></td>
+                    <td><input type="button"  value="管理员登陆入口" style="background:yellow" onclick=window.location.href="${pageContext.request.contextPath}/jsp/managerLogin.jsp"></td>
+					<td><input type="button" id="btn" value="注册" style="background:yellow"></td>
 
 				</tr>
+
 			</table>
 		</form>
 	</div>

@@ -7,27 +7,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="209fe11c-6656-4ed2-80fb-f263a9c7b0e5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/DBContoller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WebContent/jsp/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/jsp/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/image/indexback.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/image/loginback.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/image/managerLogin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/jsp/examResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/jsp/examResult.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/jsp/examResultAll.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/jsp/examResultAll.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/jsp/forgetpassword.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/jsp/forgetpassword.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/jsp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/jsp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WebContent/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/WEB-INF/classes/controller/StudentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/WEB-INF/classes/controller/StudentController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/WEB-INF/classes/exception/CustomExceptionResolver.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/WEB-INF/classes/exception/CustomExceptionResolver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/WEB-INF/classes/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/WEB-INF/classes/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/WEB-INF/classes/serviceImpl/ManagerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/WEB-INF/classes/serviceImpl/ManagerServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/WEB-INF/classes/serviceImpl/StudentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/WEB-INF/classes/serviceImpl/StudentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/jsp/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/jsp/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/jsp/managerIndex.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/jsp/managerIndex.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/jsp/managerLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/jsp/managerLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WebContent/jsp/signIn.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/WebContent/jsp/signIn.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/image/loginback.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/image/managerLogin.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/jsp/examResult.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/jsp/examResult.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/jsp/examResultAll.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/jsp/examResultAll.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/jsp/forgetpassword.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/jsp/forgetpassword.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/StudentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exception/CustomExceptionResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/CustomExceptionResolver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceImpl/ManagerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceImpl/ManagerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceImpl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceImpl/StudentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/jsp/managerLogin.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/jsp/managerLogin.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/jsp/signIn.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/classes/artifacts/OnlineExamSystem_war_exploded/jsp/signIn.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,8 +41,30 @@
       <file leaf-file-name="signIn.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/jsp/signIn.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="161">
+              <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/jsp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="55" column="30" lean-forward="true" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#font#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="managerIndex.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WebContent/jsp/managerIndex.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -51,35 +72,8 @@
       <file leaf-file-name="forgetpassword.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/jsp/forgetpassword.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="82" column="52" lean-forward="true" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StudentController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/controller/StudentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RequestParam.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar!/org/springframework/web/bind/annotation/RequestParam.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="-264">
+              <caret line="82" column="52" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -87,11 +81,26 @@
       <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/jsp/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-              <folding>
-                <element signature="n#style#0;n#input#0;n#td#1;n#tr#2;n#table#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="83">
+              <caret line="49" column="179" selection-start-line="49" selection-start-column="179" selection-end-line="50" selection-end-column="180" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="managerLogin.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/jsp/managerLogin.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="examResultAll.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/jsp/examResultAll.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -108,11 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>StudentMapp</find>
-      <find>注册</find>
-      <find>stringToMD5</find>
-      <find>signIn.jsp</find>
-      <find>StudentService</find>
       <find>insertSelective</find>
       <find>setPassword</find>
       <find>record</find>
@@ -137,6 +141,12 @@
       <find>checkSignIn.action</find>
       <find>#subm</find>
       <find>action</find>
+      <find>loginback</find>
+      <find>jpg</find>
+      <find>signinback</find>
+      <find>loginback2</find>
+      <find>indexback</find>
+      <find>CopyRight</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -155,16 +165,20 @@
         <option value="$PROJECT_DIR$/src/serviceImpl/ManagerServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/serviceImpl/StudentServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/controller/DBContoller.java" />
-        <option value="$PROJECT_DIR$/WebContent/jsp/signIn.jsp" />
         <option value="$PROJECT_DIR$/config/log4j.properties" />
         <option value="$PROJECT_DIR$/WebContent/jsp/forgetpassword.jsp" />
-        <option value="$PROJECT_DIR$/WebContent/jsp/login.jsp" />
         <option value="$PROJECT_DIR$/src/po/forgetpassword.java" />
         <option value="$PROJECT_DIR$/src/po/Forgetpassword.java" />
         <option value="$PROJECT_DIR$/src/po/Forgetpassword1.java" />
         <option value="$PROJECT_DIR$/src/controller/Forgetpassword1.java" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/WebContent/jsp/signIn.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/jsp/examResult.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/jsp/managerLogin.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/jsp/managerIndex.jsp" />
       </list>
     </option>
   </component>
@@ -185,8 +199,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="220" />
-    <option name="y" value="80" />
+    <option name="x" value="281" />
+    <option name="y" value="46" />
     <option name="width" value="1565" />
     <option name="height" value="950" />
   </component>
@@ -196,6 +210,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,12 +228,6 @@
             <path>
               <item name="OnlineExamSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="OnlineExamSystem" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OnlineExamSystem" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OnlineExamSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -228,15 +239,18 @@
               <item name="OnlineExamSystem" type="b2602c69:ProjectViewProjectNode" />
               <item name="OnlineExamSystem" type="462c0819:PsiDirectoryNode" />
               <item name="WebContent" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OnlineExamSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineExamSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="WebContent" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -457,12 +471,15 @@
       <workItem from="1536937239554" duration="828000" />
       <workItem from="1536938117378" duration="1265000" />
       <workItem from="1537102499984" duration="8682000" />
-      <workItem from="1537176496419" duration="15001000" />
+      <workItem from="1537176496419" duration="15558000" />
+      <workItem from="1537280884830" duration="673000" />
+      <workItem from="1537284610869" duration="6100000" />
+      <workItem from="1537357800365" duration="477000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25776000" />
+    <option name="totallyTimeSpent" value="33583000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,10 +513,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="8" weight="0.32952926" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32952926" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40228245" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3566334" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32952926" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32952926" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2077748" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21581769" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -549,6 +566,34 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar!/org/springframework/web/bind/annotation/RequestParam.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="950">
+          <caret line="50" column="55" lean-forward="true" selection-start-line="50" selection-start-column="55" selection-end-line="50" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/jsp/signIn.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1387">
@@ -598,9 +643,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1102">
           <caret line="58" column="62" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -618,9 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="988">
           <caret line="52" column="20" selection-start-line="50" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -631,9 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="747">
           <caret line="58" column="62" selection-start-line="58" selection-start-column="62" selection-end-line="58" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -690,9 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -700,16 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-551">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/jsp/managerIndex.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1501">
-          <caret line="79" column="76" lean-forward="true" selection-start-line="79" selection-start-column="76" selection-end-line="79" selection-end-column="76" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -731,16 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="40" column="80" lean-forward="true" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/jsp/managerLogin.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="17" selection-end-column="90" />
         </state>
       </provider>
     </entry>
@@ -776,9 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-109">
           <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -793,41 +803,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#td#1;n#tr#2;n#table#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/po/Forgetpassword">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="37" lean-forward="true" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/Forgetpassword1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#689#690#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/po/Forgetpassword" />
+    <entry file="file://$PROJECT_DIR$/src/controller/Forgetpassword1.java" />
     <entry file="file://$PROJECT_DIR$/src/exception/CustomExceptionResolver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -845,42 +825,81 @@
     <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/jsp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/jsp/signIn.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="16" column="13" lean-forward="true" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/jsp/forgetpassword.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="82" column="52" lean-forward="true" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/WebContent/WEB-INF/lib/spring-web-4.2.4.RELEASE.jar!/org/springframework/web/bind/annotation/RequestParam.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
+        <state relative-caret-position="171">
           <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/StudentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="51" column="32" lean-forward="true" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+        <state relative-caret-position="845">
+          <caret line="73" column="52" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/jsp/examResult.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="114" selection-start-line="11" selection-start-column="114" selection-end-line="11" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/jsp/signIn.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/jsp/examResultAll.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/jsp/managerLogin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="45" column="7" selection-start-line="45" selection-start-column="7" selection-end-line="45" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="49" column="179" selection-start-line="49" selection-start-column="179" selection-end-line="50" selection-end-column="180" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/jsp/forgetpassword.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264">
+          <caret line="82" column="52" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/jsp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="55" column="30" lean-forward="true" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#font#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/jsp/managerIndex.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="53" column="41" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
         </state>
       </provider>
     </entry>
